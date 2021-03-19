@@ -1,6 +1,6 @@
 function PropertyCard(props) {
     return (
-        <div className="bg-white rounded-lg overflow-hidden border w-full">
+        <div className="bg-white rounded-lg overflow-hidden border">
             <div className="relative bg-red-500 pb-2/3">
                 <img className="absolute h-full w-full object-cover" src={props.property.imageUrl} alt={props.property.imageAlt}></img>
             </div>

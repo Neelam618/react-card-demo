@@ -14,7 +14,7 @@ function App() {
     rating: 4,
   }
   return (
-    <div id="app">
+    <div id="app" className="antialiased text-gray-900">
       <div className="bg-gray-200 min-h-screen p-8 flex items-center justify-center">
         <PropertyCard property={property}/>
       </div>

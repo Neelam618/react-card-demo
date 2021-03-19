@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import PropertyCard from './components/PropertyCard';
 
 function App() {
+  let property = {
+    imageUrl: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+    imageAlt: 'Rear view of modern home with pool',
+    beds: 3,
+    baths: 2,
+    title: "Modern home in city center",
+    priceInCents: 190000,
+    formattedPrice: "$1,900.00",
+    reviewCount: 34,
+    rating: 4,
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div id="app">
+      <div className="bg-gray-200 min-h-screen p-8 flex items-center justify-center">
+        <PropertyCard property={property}/>
+      </div>
+  </div>
   );
 }
 

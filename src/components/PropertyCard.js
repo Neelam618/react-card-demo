@@ -1,7 +1,9 @@
 function PropertyCard(props) {
     return (
-        <div className="bg-white rounded-lg overflow-hidden border">
-            <img className="h-48 w-full object-cover" src={props.property.imageUrl} alt={props.property.imageAlt}></img>
+        <div className="bg-white rounded-lg overflow-hidden border w-full">
+            <div className="relative bg-red-500 pb-2/3">
+                <img className="absolute h-full w-full object-cover" src={props.property.imageUrl} alt={props.property.imageAlt}></img>
+            </div>
             <div className="p-6">
                 <div className="flex items-baseline">
                     <span className="inline-block bg-green-200 text-green-800 text-xs px-2 rounded-full uppercase font-semibold tracking-wide">New</span>
